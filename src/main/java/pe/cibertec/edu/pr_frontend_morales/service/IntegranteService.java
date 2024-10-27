@@ -9,7 +9,8 @@ import java.util.List;
 public class IntegranteService {
 
     private final RestTemplate restTemplate = new RestTemplate();
-    private final String url = "http://localhost:8085/api/get-integrantes";
+    private final String url = "https://pr-backend-morales-agbeb4hxbyd6ctgd.canadacentral-01.azurewebsites.net/api/get-integrantes";
+
 
     public List<String> obtenerIntegrantes() {
         return restTemplate.getForObject(url, List.class);
